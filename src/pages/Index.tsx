@@ -5,6 +5,7 @@ import AboutSection from "@/components/AboutSection";
 import ThemesSection from "@/components/ThemesSection";
 import EventFlowSection from "@/components/EventFlowSection";
 import RulesSection from "@/components/RulesSection";
+import PrizesSection from "@/components/PrizesSection";
 import ResourcesSection from "@/components/ResourcesSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
