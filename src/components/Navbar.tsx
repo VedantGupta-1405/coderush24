@@ -7,7 +7,6 @@ const navLinks = [
   { label: "Themes", href: "#themes" },
   { label: "Event Flow", href: "#eventflow" },
   { label: "Rules", href: "#rules" },
-  { label: "Prizes", href: "#prizes" },
   { label: "Resources", href: "#resources" },
   { label: "Contact", href: "#contact" },
 ];
