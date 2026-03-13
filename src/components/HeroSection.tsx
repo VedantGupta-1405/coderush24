@@ -23,10 +23,6 @@ const HeroSection = () => (
           <div className="h-px w-8 bg-foreground" />
         </div>
 
-        <p className="font-display text-2xl md:text-3xl font-bold text-foreground mb-8">
-          Prize Pool: ₹25,000+
-        </p>
-
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
           {[
             { icon: Calendar, label: "Date", value: "8–9 April 2026" },
