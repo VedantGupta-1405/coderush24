@@ -2,7 +2,7 @@ import { Trophy } from "lucide-react";
 
 // CHANGE: Widened container to max-w-5xl, fixed text colors to white for lighter background visibility
 const PrizesSection = () => (
-  <section id="prizes" className="section-padding scroll-mt-15">
+  <section id="prizes" className="section-padding scroll-mt-20">
     <div className="section-container flex flex-col items-center">
       
       {/* CHANGE: Heading matched to wider max-w-5xl, explicit white color */}
