@@ -21,8 +21,8 @@ const Navbar = () => {
 
   return (
     <>
-      {/* 🔥 Top Bar */}
-      <div className="fixed top-0 left-0 right-0 z-40 bg-accent text-accent-foreground h-12 flex items-center justify-center text-sm font-medium">
+      {/* 🔥 Top Bar (fixed color) */}
+      <div className="fixed top-0 left-0 right-0 z-40 bg-black/70 text-white backdrop-blur-md h-12 flex items-center justify-center text-sm font-medium">
         🚀 Registrations Open — Limited Slots →
       </div>
 
@@ -79,9 +79,9 @@ const Navbar = () => {
         )}
       </nav>
 
-      {/* 🔥 LOGO OVERLAY */}
+      {/* 🔥 LOGO OVERLAY (FULL LEFT) */}
       <div className="fixed top-0 left-0 right-0 z-50 pointer-events-none">
-        <div className="section-container relative">
+        <div className="relative">
 
           <a
             href="#home"
@@ -91,15 +91,15 @@ const Navbar = () => {
             }}
             className="
               pointer-events-auto
-              absolute top-3 left-0   /* 🔥 moved down slightly */
+              absolute top-3 left-4   /* 🔥 pushed to left */
               flex items-center gap-8
-              h-[88px] px-8           /* 🔥 box SAME size */
+              h-[88px] px-8
               rounded-xl
               bg-black/40 backdrop-blur-lg
               border border-white/10
             "
           >
-            {/* 🔥 LOGO SIZE INCREASED */}
+            {/* 🔥 Bigger logos */}
             <img
               src="/code_rush_white.png"
               alt="Code Rush"
