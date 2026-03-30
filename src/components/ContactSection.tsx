@@ -11,19 +11,25 @@ const contacts = {
   ],
 };
 
+// CHANGE: Widened container to max-w-5xl, updated all text to white variants for lighter bg visibility
 const ContactSection = () => (
   <section id="contact" className="section-padding">
-    <div className="section-container">
-      <h2 className="heading-display mb-6">Contact</h2>
-      <div className="grid md:grid-cols-2 gap-6 max-w-2xl">
+    <div className="section-container flex flex-col items-center">
+      {/* CHANGE: Heading white, matched to max-w-5xl */}
+      <h2 className="heading-display mb-6 w-full max-w-5xl text-white">Contact</h2>
+
+      {/* CHANGE: Grid widened to max-w-5xl */}
+      <div className="grid md:grid-cols-2 gap-6 w-full max-w-5xl">
         {Object.entries(contacts).map(([group, people]) => (
           <div key={group}>
-            <p className="text-xs uppercase tracking-widest text-muted-foreground font-semibold mb-4">{group}</p>
+            {/* CHANGE: Group label updated to white/60 */}
+            <p className="text-xs uppercase tracking-widest text-white/60 font-semibold mb-4">{group}</p>
             <div className="space-y-3">
               {people.map((p) => (
                 <div key={p.name} className="glass-card p-4">
-                  <p className="font-display font-semibold text-foreground">{p.name}</p>
-                  <p className="text-sm text-muted-foreground flex items-center gap-1.5 mt-1">
+                  {/* CHANGE: Name white, phone white/70 */}
+                  <p className="font-display font-semibold text-white">{p.name}</p>
+                  <p className="text-sm text-white/70 flex items-center gap-1.5 mt-1">
                     <Phone size={13} /> {p.phone}
                   </p>
                 </div>
