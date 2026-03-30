@@ -29,13 +29,17 @@ const Navbar = () => {
       {/* 🔥 Main Navbar */}
       <nav className="fixed top-12 left-0 right-0 z-40 bg-card/90 backdrop-blur-md shadow-sm">
         <div className="section-container flex items-center justify-end h-16">
+
           {/* Desktop Links */}
           <div className="hidden md:flex items-center gap-6">
             {navLinks.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
-                onClick={(e) => { e.preventDefault(); handleClick(l.href); }}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleClick(l.href);
+                }}
                 className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
               >
                 {l.label}
@@ -60,7 +64,10 @@ const Navbar = () => {
                 <a
                   key={l.href}
                   href={l.href}
-                  onClick={(e) => { e.preventDefault(); handleClick(l.href); }}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleClick(l.href);
+                  }}
                   className="text-sm font-medium text-muted-foreground hover:text-foreground py-1"
                 >
                   {l.label}
@@ -71,17 +78,24 @@ const Navbar = () => {
         )}
       </nav>
 
-      {/* 🔥 SINGLE OVERLAY LOGO (spans both bars) */}
+      {/* 🔥 SINGLE OVERLAY LOGO (BOTH LOGOS, BIG) */}
       <a
         href="#home"
-        onClick={(e) => { e.preventDefault(); handleClick("#home"); }}
-        className="fixed left-6 top-0 z-50 flex items-center h-[76px]" 
-        // 12 (top bar) + 64 (navbar) = 76px
+        onClick={(e) => {
+          e.preventDefault();
+          handleClick("#home");
+        }}
+        className="fixed left-8 top-0 z-50 flex items-center gap-5 h-[76px]"
       >
         <img
           src="/code_rush_white.png"
-          alt="Logo"
-          className="h-14 md:h-16 w-auto object-contain"
+          alt="Code Rush"
+          className="h-16 md:h-20 w-auto object-contain"
+        />
+        <img
+          src="/cmrit_logo.png"
+          alt="CMRIT"
+          className="h-16 md:h-20 w-auto object-contain"
         />
       </a>
     </>
