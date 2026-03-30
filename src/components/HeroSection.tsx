@@ -1,7 +1,7 @@
 import { ArrowRight, Download, MapPin, Calendar, Users, Coins } from "lucide-react";
 
 const REGISTER_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdTFbtbSUuYAFguAUi7UM96pLU4rC3h0-pe0CHAQIVHkDnriA/viewform?usp=publish-editor";
-const BROCHURE_URL = "https://drive.google.com/file/d/1l1Xfcz7JzlQH8iE1MrqwoI-UM8eHSUNd/view?usp=sharing";
+const BROCHURE_URL = "https://drive.google.com/file/d/1TfdL_-86XrcJKB5A9ff4vRBUNOPX05Fc/view?usp=sharing";
 
 // CHANGE: Google Maps directions link for CMRIT Bangalore - opens directions from user's current location
 const CMRIT_MAPS_URL = "https://www.google.com/maps/dir/?api=1&destination=12.9669,77.7135";
