@@ -20,69 +20,79 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-card/90 backdrop-blur-md shadow-sm">
-      <div className="section-container flex items-center justify-between h-16">
-        
-        {/* Logos */}
-<a
-  href="#home"
-  onClick={(e) => { e.preventDefault(); handleClick("#home"); }}
-  className="flex items-center gap-4"
->
-  <img
-    src="/code_rush_white.png"
-    alt="Logo 1"
-    className="h-12 md:h-14 w-auto object-contain"
-  />
-  <img
-    src="/cmrit_logo.png"
-    alt="Logo 2"
-    className="h-12 md:h-14 w-auto object-contain"
-  />
-</a>
-
-        {/* Desktop */}
-        <div className="hidden md:flex items-center gap-6">
-          {navLinks.map((l) => (
-            <a
-              key={l.href}
-              href={l.href}
-              onClick={(e) => { e.preventDefault(); handleClick(l.href); }}
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-            >
-              {l.label}
-            </a>
-          ))}
-        </div>
-
-        {/* Mobile toggle */}
-        <button
-          className="md:hidden text-foreground"
-          onClick={() => setOpen(!open)}
-          aria-label="Toggle menu"
-        >
-          {open ? <X size={24} /> : <Menu size={24} />}
-        </button>
+    <>
+      {/* 🔥 Top Announcement Bar */}
+      <div className="fixed top-0 left-0 right-0 z-50 bg-accent text-accent-foreground text-sm py-2 flex justify-center items-center">
+        <a href="#home" className="font-medium hover:underline">
+          🚀 Registrations Open — Limited Slots →
+        </a>
       </div>
 
-      {/* Mobile menu */}
-      {open && (
-        <div className="md:hidden bg-card/95 backdrop-blur-md border-t border-border">
-          <div className="section-container py-4 flex flex-col gap-3">
+      {/* 🔥 Main Navbar */}
+      <nav className="fixed top-8 left-0 right-0 z-50 transition-all duration-300 bg-card/90 backdrop-blur-md shadow-sm">
+        <div className="section-container flex items-center justify-between h-16">
+
+          {/* Logos */}
+          <a
+            href="#home"
+            onClick={(e) => { e.preventDefault(); handleClick("#home"); }}
+            className="flex items-center gap-4"
+          >
+            <img
+              src="/code_rush_white.png"
+              alt="Code Rush"
+              className="h-12 md:h-14 w-auto object-contain"
+            />
+            <img
+              src="/cmrit_logo.png"
+              alt="CMRIT"
+              className="h-12 md:h-14 w-auto object-contain"
+            />
+          </a>
+
+          {/* Desktop */}
+          <div className="hidden md:flex items-center gap-6">
             {navLinks.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
                 onClick={(e) => { e.preventDefault(); handleClick(l.href); }}
-                className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-1"
+                className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
               >
                 {l.label}
               </a>
             ))}
           </div>
+
+          {/* Mobile toggle */}
+          <button
+            className="md:hidden text-foreground"
+            onClick={() => setOpen(!open)}
+            aria-label="Toggle menu"
+          >
+            {open ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
-      )}
-    </nav>
+
+        {/* Mobile menu */}
+        {open && (
+          <div className="md:hidden bg-card/95 backdrop-blur-md border-t border-border">
+            <div className="section-container py-4 flex flex-col gap-3">
+              {navLinks.map((l) => (
+                <a
+                  key={l.href}
+                  href={l.href}
+                  onClick={(e) => { e.preventDefault(); handleClick(l.href); }}
+                  className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-1"
+                >
+                  {l.label}
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
+      </nav>
+    </>
   );
 };
 
