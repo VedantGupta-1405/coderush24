@@ -7,7 +7,7 @@ const resources = [
 
 // CHANGE: Widened container to max-w-5xl, updated text to white for lighter bg visibility
 const ResourcesSection = () => (
-  <section id="resources" className="section-padding">
+  <section id="resources" className="section-padding scroll-mt-20">
     <div className="section-container flex flex-col items-center">
       {/* CHANGE: Heading white, matched to max-w-5xl */}
       <h2 className="heading-display mb-8 w-full max-w-5xl text-white">Resources</h2>
