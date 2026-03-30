@@ -20,16 +20,25 @@ const Navbar = () => {
   };
 
   return (
-    <nav
-      className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-card/90 backdrop-blur-md shadow-sm"
-    >
+    <nav className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-card/90 backdrop-blur-md shadow-sm">
       <div className="section-container flex items-center justify-between h-16">
+        
+        {/* Logos */}
         <a
           href="#home"
           onClick={(e) => { e.preventDefault(); handleClick("#home"); }}
-          className="font-display text-xl font-bold tracking-tight text-foreground"
+          className="flex items-center gap-3"
         >
-          CODE RUSH
+          <img
+            src="/logo1.png"
+            alt="Logo 1"
+            className="h-8 w-auto"
+          />
+          <img
+            src="/logo2.png"
+            alt="Logo 2"
+            className="h-8 w-auto"
+          />
         </a>
 
         {/* Desktop */}
