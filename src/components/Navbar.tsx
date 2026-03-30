@@ -103,7 +103,7 @@ const Navbar = () => {
             <img
               src="/code_rush_white.png"
               alt="Code Rush"
-              className="h-16 md:h-[84px] w-auto object-contain"
+              className="h-16 md:h-[90px] w-auto object-contain"
             />
 
             <img
