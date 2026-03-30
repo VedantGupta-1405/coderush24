@@ -11,21 +11,22 @@ const HeroSection = () => (
     {/* CHANGE: Centered container with equal side margins */}
     <div className="section-container w-full flex justify-center">
       <div className="max-w-3xl w-full">
-        <p className="text-sm font-medium tracking-widest uppercase text-muted-foreground mb-4">
+        {/* CHANGE: text-white for strong visibility against lighter bg */}
+        <p className="text-sm font-medium tracking-widest uppercase text-white/70 mb-4">
           CMR Institute of Technology presents
         </p>
 
         {/* CHANGE: Changed from two lines (CODE<br/>RUSH) to single line with whitespace-nowrap */}
-        <h1 className="font-display text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold tracking-tighter leading-[0.85] text-foreground mb-4 whitespace-nowrap">
+        <h1 className="font-display text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold tracking-tighter leading-[0.85] text-white mb-4 whitespace-nowrap">
           CODE RUSH
         </h1>
 
         <div className="flex items-center gap-3 mb-6">
-          <div className="h-px w-8 bg-foreground" />
-          <p className="font-display text-lg md:text-xl tracking-wide uppercase text-muted-foreground">
+          <div className="h-px w-8 bg-white" />
+          <p className="font-display text-lg md:text-xl tracking-wide uppercase text-white/70">
             24-Hour National Hackathon
           </p>
-          <div className="h-px w-8 bg-foreground" />
+          <div className="h-px w-8 bg-white" />
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
@@ -38,9 +39,10 @@ const HeroSection = () => (
           ].map((item) => {
             const CardContent = (
               <>
-                <item.icon size={16} className="text-muted-foreground mb-1" />
-                <p className="text-xs text-muted-foreground">{item.label}</p>
-                <p className="text-sm font-semibold font-display text-foreground">{item.value}</p>
+                {/* CHANGE: icon label and value updated to white colors for lighter bg */}
+                <item.icon size={16} className="text-white/70 mb-1" />
+                <p className="text-xs text-white/60">{item.label}</p>
+                <p className="text-sm font-semibold font-display text-white">{item.value}</p>
               </>
             );
 
