@@ -4,7 +4,7 @@ const REGISTER_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdTFbtbSUuYAFguAU
 const BROCHURE_URL = "https://drive.google.com/file/d/1l1Xfcz7JzlQH8iE1MrqwoI-UM8eHSUNd/view?usp=sharing";
 
 // CHANGE: Google Maps directions link for CMRIT Bangalore - opens directions from user's current location
-const CMRIT_MAPS_URL = "https://www.google.com/maps/dir/?api=1&destination=CMR+Institute+of+Technology+Bangalore&destination_place_id=ChIJMZSXq_oUrjsREt5lEi0Xy0g";
+const CMRIT_MAPS_URL = "https://www.google.com/maps/dir/?api=1&destination=12.9669,77.7135";
 
 const HeroSection = () => (
   <section id="home" className="min-h-[90vh] flex items-center pt-16 pb-6">
