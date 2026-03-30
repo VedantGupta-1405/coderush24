@@ -1,8 +1,7 @@
 import { FileText, ExternalLink } from "lucide-react";
 
 const resources = [
-  { label: "Download Brochure", url: "https://drive.google.com" },
-  { label: "Problem Statements", url: "https://drive.google.com" },
+  { label: "Download Brochure", url: "https://drive.google.com/file/d/1l1Xfcz7JzlQH8iE1MrqwoI-UM8eHSUNd/view?usp=sharing" },
   { label: "Hackathon Rules", url: "https://drive.google.com" },
 ];
 
