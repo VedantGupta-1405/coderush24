@@ -21,18 +21,39 @@ const Navbar = () => {
 
   return (
     <>
-      {/* 🔥 Top Announcement Bar */}
-      <div className="fixed top-0 left-0 right-0 z-50 bg-accent text-accent-foreground text-sm py-2 flex justify-center items-center">
-        <a href="#home" className="font-medium hover:underline">
-          🚀 Registrations Open — Limited Slots →
-        </a>
+      {/* 🔥 Top Bar with Logos + CTA */}
+      <div className="fixed top-0 left-0 right-0 z-50 bg-accent text-accent-foreground">
+        <div className="section-container flex items-center justify-between h-12">
+
+          {/* Logos (small but visible) */}
+          <div className="flex items-center gap-3">
+            <img
+              src="/code_rush_white.png"
+              alt="Code Rush"
+              className="h-8 w-auto object-contain"
+            />
+            <img
+              src="/cmrit_logo.png"
+              alt="CMRIT"
+              className="h-8 w-auto object-contain"
+            />
+          </div>
+
+          {/* CTA */}
+          <a
+            href="#home"
+            className="text-sm font-semibold hover:underline"
+          >
+            🚀 Registrations Open — Limited Slots →
+          </a>
+        </div>
       </div>
 
       {/* 🔥 Main Navbar */}
-      <nav className="fixed top-8 left-0 right-0 z-50 transition-all duration-300 bg-card/90 backdrop-blur-md shadow-sm">
+      <nav className="fixed top-12 left-0 right-0 z-50 transition-all duration-300 bg-card/90 backdrop-blur-md shadow-sm">
         <div className="section-container flex items-center justify-between h-16">
 
-          {/* Logos */}
+          {/* Logos (main bigger branding) */}
           <a
             href="#home"
             onClick={(e) => { e.preventDefault(); handleClick("#home"); }}
