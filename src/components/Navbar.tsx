@@ -22,9 +22,9 @@ const Navbar = () => {
   return (
     <>
       {/* 🔥 Top Bar (fixed color) */}
-      <div className="fixed top-0 left-0 right-0 z-40 bg-black/70 text-white backdrop-blur-md h-12 flex items-center justify-center text-sm font-medium">
-        🚀 Registrations Open — Limited Slots →
-      </div>
+      <div className="fixed top-0 left-0 right-0 z-40 bg-black/70 text-white backdrop-blur-md h-12 flex items-center justify-center text-base md:text-lg font-semibold">
+  Registrations Open — Limited Slots →
+</div>
 
       {/* 🔥 Main Navbar */}
       <nav className="fixed top-12 left-0 right-0 z-40 bg-card/90 backdrop-blur-md shadow-sm">
