@@ -78,35 +78,41 @@ const Navbar = () => {
         )}
       </nav>
 
-      {/* 🔥 OVERLAY LOGO BLOCK (FIXED + GLASS BACKGROUND) */}
-      <a
-        href="#home"
-        onClick={(e) => {
-          e.preventDefault();
-          handleClick("#home");
-        }}
-        className="fixed left-6 top-1 z-50"
-      >
-        <div className="
-          flex items-center gap-4 
-          h-[72px] px-4 
-          rounded-lg 
-          bg-white/10 
-          backdrop-blur-md 
-          border border-white/20
-        ">
-          <img
-            src="/code_rush_white.png"
-            alt="Code Rush"
-            className="h-10 md:h-12 w-auto object-contain"
-          />
-          <img
-            src="/cmrit_logo.png"
-            alt="CMRIT"
-            className="h-10 md:h-12 w-auto object-contain"
-          />
+      {/* 🔥 CENTERED OVERLAY LOGO BLOCK */}
+      <div className="fixed top-0 left-0 right-0 z-50 pointer-events-none">
+        <div className="section-container relative">
+
+          <a
+            href="#home"
+            onClick={(e) => {
+              e.preventDefault();
+              handleClick("#home");
+            }}
+            className="
+              pointer-events-auto
+              absolute top-1 left-0
+              flex items-center gap-6
+              h-[72px] px-6
+              rounded-xl
+              bg-black/40
+              backdrop-blur-lg
+              border border-white/10
+            "
+          >
+            <img
+              src="/code_rush_white.png"
+              alt="Code Rush"
+              className="h-12 md:h-14 w-auto object-contain"
+            />
+            <img
+              src="/cmrit_logo.png"
+              alt="CMRIT"
+              className="h-12 md:h-14 w-auto object-contain"
+            />
+          </a>
+
         </div>
-      </a>
+      </div>
     </>
   );
 };
