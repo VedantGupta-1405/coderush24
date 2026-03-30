@@ -21,57 +21,15 @@ const Navbar = () => {
 
   return (
     <>
-      {/* 🔥 Top Bar with Logos + CTA */}
-      <div className="fixed top-0 left-0 right-0 z-50 bg-accent text-accent-foreground">
-        <div className="section-container flex items-center justify-between h-12">
-
-          {/* Logos (small but visible) */}
-          <div className="flex items-center gap-3">
-            <img
-              src="/code_rush_white.png"
-              alt="Code Rush"
-              className="h-8 w-auto object-contain"
-            />
-            <img
-              src="/cmrit_logo.png"
-              alt="CMRIT"
-              className="h-8 w-auto object-contain"
-            />
-          </div>
-
-          {/* CTA */}
-          <a
-            href="#home"
-            className="text-sm font-semibold hover:underline"
-          >
-            🚀 Registrations Open — Limited Slots →
-          </a>
-        </div>
+      {/* 🔥 Top Bar */}
+      <div className="fixed top-0 left-0 right-0 z-40 bg-accent text-accent-foreground h-12 flex items-center justify-center text-sm font-medium">
+        🚀 Registrations Open — Limited Slots →
       </div>
 
       {/* 🔥 Main Navbar */}
-      <nav className="fixed top-12 left-0 right-0 z-50 transition-all duration-300 bg-card/90 backdrop-blur-md shadow-sm">
-        <div className="section-container flex items-center justify-between h-16">
-
-          {/* Logos (main bigger branding) */}
-          <a
-            href="#home"
-            onClick={(e) => { e.preventDefault(); handleClick("#home"); }}
-            className="flex items-center gap-4"
-          >
-            <img
-              src="/code_rush_white.png"
-              alt="Code Rush"
-              className="h-12 md:h-14 w-auto object-contain"
-            />
-            <img
-              src="/cmrit_logo.png"
-              alt="CMRIT"
-              className="h-12 md:h-14 w-auto object-contain"
-            />
-          </a>
-
-          {/* Desktop */}
+      <nav className="fixed top-12 left-0 right-0 z-40 bg-card/90 backdrop-blur-md shadow-sm">
+        <div className="section-container flex items-center justify-end h-16">
+          {/* Desktop Links */}
           <div className="hidden md:flex items-center gap-6">
             {navLinks.map((l) => (
               <a
@@ -89,7 +47,6 @@ const Navbar = () => {
           <button
             className="md:hidden text-foreground"
             onClick={() => setOpen(!open)}
-            aria-label="Toggle menu"
           >
             {open ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -104,7 +61,7 @@ const Navbar = () => {
                   key={l.href}
                   href={l.href}
                   onClick={(e) => { e.preventDefault(); handleClick(l.href); }}
-                  className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-1"
+                  className="text-sm font-medium text-muted-foreground hover:text-foreground py-1"
                 >
                   {l.label}
                 </a>
@@ -113,6 +70,20 @@ const Navbar = () => {
           </div>
         )}
       </nav>
+
+      {/* 🔥 SINGLE OVERLAY LOGO (spans both bars) */}
+      <a
+        href="#home"
+        onClick={(e) => { e.preventDefault(); handleClick("#home"); }}
+        className="fixed left-6 top-0 z-50 flex items-center h-[76px]" 
+        // 12 (top bar) + 64 (navbar) = 76px
+      >
+        <img
+          src="/code_rush_white.png"
+          alt="Logo"
+          className="h-14 md:h-16 w-auto object-contain"
+        />
+      </a>
     </>
   );
 };
