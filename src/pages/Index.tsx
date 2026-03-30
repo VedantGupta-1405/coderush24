@@ -2,8 +2,8 @@ import paperBg from "@/assets/paper-bg.jpg";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
-import ThemesSection from "@/components/ThemesSection";
-import EventFlowSection from "@/components/EventFlowSection";
+// CHANGE: Removed ThemesSection and EventFlowSection imports
+import PrizesSection from "@/components/PrizesSection"; // CHANGE: Added PrizesSection back
 import RulesSection from "@/components/RulesSection";
 import ResourcesSection from "@/components/ResourcesSection";
 import ContactSection from "@/components/ContactSection";
@@ -21,16 +21,17 @@ const Index = () => (
       }}
     />
 
-    {/* Dark overlay */}
-    <div className="fixed inset-0 z-0 bg-black/55" />
+    {/* CHANGE: Reduced overlay opacity from bg-black/55 to bg-black/30 to make background lighter/more white */}
+    <div className="fixed inset-0 z-0 bg-black/30" />
 
     {/* Content */}
     <div className="relative z-10">
       <Navbar />
       <HeroSection />
       <AboutSection />
-      <ThemesSection />
-      <EventFlowSection />
+      {/* CHANGE: Removed <ThemesSection /> */}
+      {/* CHANGE: Removed <EventFlowSection /> */}
+      <PrizesSection /> {/* CHANGE: Added PrizesSection back */}
       <RulesSection />
       <ResourcesSection />
       <ContactSection />
