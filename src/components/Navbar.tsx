@@ -30,7 +30,7 @@ const Navbar = () => {
           className="flex items-center gap-3"
         >
           <img
-            src="/code_rush_logo.png"
+            src="/code_rush_white.png"
             alt="Logo 1"
             className="h-8 w-auto"
           />
