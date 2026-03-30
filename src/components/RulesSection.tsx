@@ -8,16 +8,21 @@ const rules = [
   "Judges' decisions will be final.",
 ];
 
+// CHANGE: Widened container to max-w-5xl, updated all text to white/white-80 for lighter bg visibility
 const RulesSection = () => (
   <section id="rules" className="section-padding">
-    <div className="section-container">
-      <h2 className="heading-display mb-8">Rules</h2>
-      <div className="glass-card p-6 md:p-8 max-w-2xl">
+    <div className="section-container flex flex-col items-center">
+      {/* CHANGE: Heading white, matched to max-w-5xl */}
+      <h2 className="heading-display mb-8 w-full max-w-5xl text-white">Rules</h2>
+
+      {/* CHANGE: Card widened to max-w-5xl */}
+      <div className="glass-card p-6 md:p-8 w-full max-w-5xl">
         <ul className="space-y-4">
           {rules.map((r, i) => (
             <li key={i} className="flex gap-3 items-start">
-              <CheckCircle size={18} className="text-foreground mt-0.5 flex-shrink-0" />
-              <span className="text-sm md:text-base text-muted-foreground">{r}</span>
+              {/* CHANGE: icon and text updated to white colors */}
+              <CheckCircle size={18} className="text-white mt-0.5 flex-shrink-0" />
+              <span className="text-sm md:text-base text-white/80">{r}</span>
             </li>
           ))}
         </ul>
