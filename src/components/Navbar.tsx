@@ -24,22 +24,22 @@ const Navbar = () => {
       <div className="section-container flex items-center justify-between h-16">
         
         {/* Logos */}
-        <a
-          href="#home"
-          onClick={(e) => { e.preventDefault(); handleClick("#home"); }}
-          className="flex items-center gap-3"
-        >
-          <img
-            src="/code_rush_white.png"
-            alt="Logo 1"
-            className="h-8 w-auto"
-          />
-          <img
-            src="/cmrit_logo.png"
-            alt="Logo 2"
-            className="h-8 w-auto"
-          />
-        </a>
+<a
+  href="#home"
+  onClick={(e) => { e.preventDefault(); handleClick("#home"); }}
+  className="flex items-center gap-3"
+>
+  <img
+    src="/logo1.png"
+    alt="Logo 1"
+    className="h-10 md:h-11 w-auto"
+  />
+  <img
+    src="/logo2.png"
+    alt="Logo 2"
+    className="h-10 md:h-11 w-auto"
+  />
+</a>
 
         {/* Desktop */}
         <div className="hidden md:flex items-center gap-6">
