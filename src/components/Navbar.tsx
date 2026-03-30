@@ -28,10 +28,12 @@ const Navbar = () => {
 
       {/* 🔥 Main Navbar */}
       <nav className="fixed top-12 left-0 right-0 z-40 bg-card/90 backdrop-blur-md shadow-sm">
-        <div className="section-container flex items-center justify-end h-16">
+        
+        {/* 🔽 CHANGE HERE: justify-center keeps nav links centered */}
+        <div className="section-container flex items-center justify-center h-16">
 
-          {/* Desktop Links */}
-          <div className="hidden md:flex items-center gap-6">
+          {/* 🔽 CHANGE HERE: gap controls spacing between nav links */}
+          <div className="hidden md:flex items-center gap-8">
             {navLinks.map((l) => (
               <a
                 key={l.href}
@@ -49,7 +51,7 @@ const Navbar = () => {
 
           {/* Mobile toggle */}
           <button
-            className="md:hidden text-foreground"
+            className="md:hidden text-foreground absolute right-6"
             onClick={() => setOpen(!open)}
           >
             {open ? <X size={24} /> : <Menu size={24} />}
@@ -78,7 +80,7 @@ const Navbar = () => {
         )}
       </nav>
 
-      {/* 🔥 CENTERED OVERLAY LOGO BLOCK */}
+      {/* 🔥 LOGO OVERLAY BLOCK */}
       <div className="fixed top-0 left-0 right-0 z-50 pointer-events-none">
         <div className="section-container relative">
 
@@ -90,24 +92,41 @@ const Navbar = () => {
             }}
             className="
               pointer-events-auto
-              absolute top-1 left-0
-              flex items-center gap-6
-              h-[72px] px-6
+              
+              /* 🔽 CHANGE HERE: top position */
+              absolute top-0 left-0
+              
+              flex items-center
+              
+              /* 🔽 CHANGE HERE: gap between logos */
+              gap-8
+              
+              /* 🔽 CHANGE HERE: BOX HEIGHT */
+              h-[88px]
+              
+              /* 🔽 CHANGE HERE: BOX PADDING */
+              px-8
+              
               rounded-xl
-              bg-black/40
-              backdrop-blur-lg
+              
+              /* 🔽 CHANGE HERE: BACKGROUND (black transparent) */
+              bg-black/40 backdrop-blur-lg
+              
               border border-white/10
             "
           >
+            {/* 🔽 CHANGE HERE: LOGO SIZE */}
             <img
               src="/code_rush_white.png"
               alt="Code Rush"
-              className="h-12 md:h-14 w-auto object-contain"
+              className="h-14 md:h-[72px] w-auto object-contain"
             />
+
+            {/* 🔽 CHANGE HERE: LOGO SIZE */}
             <img
               src="/cmrit_logo.png"
               alt="CMRIT"
-              className="h-12 md:h-14 w-auto object-contain"
+              className="h-14 md:h-[72px] w-auto object-contain"
             />
           </a>
 
