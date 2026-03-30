@@ -27,17 +27,17 @@ const Navbar = () => {
 <a
   href="#home"
   onClick={(e) => { e.preventDefault(); handleClick("#home"); }}
-  className="flex items-center gap-3"
+  className="flex items-center gap-4"
 >
   <img
     src="/code_rush_white.png"
     alt="Logo 1"
-    className="h-10 md:h-11 w-auto"
+    className="h-12 md:h-14 w-auto object-contain"
   />
   <img
-    src="cmrit_logo.png"
+    src="/cmrit_logo.png"
     alt="Logo 2"
-    className="h-10 md:h-11 w-auto"
+    className="h-12 md:h-14 w-auto object-contain"
   />
 </a>
 
