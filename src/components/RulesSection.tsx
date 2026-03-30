@@ -10,7 +10,7 @@ const rules = [
 
 // CHANGE: Widened container to max-w-5xl, updated all text to white/white-80 for lighter bg visibility
 const RulesSection = () => (
-  <section id="rules" className="section-padding">
+  <section id="rules" className="section-padding scroll-mt-20">
     <div className="section-container flex flex-col items-center">
       {/* CHANGE: Heading white, matched to max-w-5xl */}
       <h2 className="heading-display mb-8 w-full max-w-5xl text-white">Rules</h2>
