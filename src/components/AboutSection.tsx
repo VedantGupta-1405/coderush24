@@ -1,7 +1,7 @@
 // CHANGE: Increased container width from max-w-3xl to max-w-5xl for wider layout
 // CHANGE: Updated text colors to text-white and text-white/80 to be clearly visible against lighter background
 const AboutSection = () => (
-  <section id="about" className="section-padding">
+  <section id="about" className="section-padding scroll-mt-20">
     <div className="section-container flex flex-col items-center">
       {/* CHANGE: Heading width matched to wider card, explicit white color for visibility */}
       <h2 className="heading-display mb-8 w-full max-w-5xl text-white">About</h2>
