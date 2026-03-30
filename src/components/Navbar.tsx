@@ -78,25 +78,34 @@ const Navbar = () => {
         )}
       </nav>
 
-      {/* 🔥 SINGLE OVERLAY LOGO (BOTH LOGOS, BIG) */}
+      {/* 🔥 OVERLAY LOGO BLOCK (FIXED + GLASS BACKGROUND) */}
       <a
         href="#home"
         onClick={(e) => {
           e.preventDefault();
           handleClick("#home");
         }}
-        className="fixed left-8 top-0 z-50 flex items-center gap-5 h-[76px]"
+        className="fixed left-6 top-1 z-50"
       >
-        <img
-          src="/code_rush_white.png"
-          alt="Code Rush"
-          className="h-16 md:h-20 w-auto object-contain"
-        />
-        <img
-          src="/cmrit_logo.png"
-          alt="CMRIT"
-          className="h-16 md:h-20 w-auto object-contain"
-        />
+        <div className="
+          flex items-center gap-4 
+          h-[72px] px-4 
+          rounded-lg 
+          bg-white/10 
+          backdrop-blur-md 
+          border border-white/20
+        ">
+          <img
+            src="/code_rush_white.png"
+            alt="Code Rush"
+            className="h-10 md:h-12 w-auto object-contain"
+          />
+          <img
+            src="/cmrit_logo.png"
+            alt="CMRIT"
+            className="h-10 md:h-12 w-auto object-contain"
+          />
+        </div>
       </a>
     </>
   );
