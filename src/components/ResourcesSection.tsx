@@ -2,7 +2,7 @@ import { FileText, ExternalLink } from "lucide-react";
 
 const resources = [
   { label: "Download Brochure", url: "https://drive.google.com/file/d/1TfdL_-86XrcJKB5A9ff4vRBUNOPX05Fc/view?usp=sharing" },
-  { label: "Hackathon Rules", url: "https://drive.google.com/file/d/1d4W747ek8brsAS2jqW5A-SIbRmDAvjPk/view?usp=sharing" },
+  { label: "Hackathon Rules", url: "https://drive.google.com/file/d/1K-j6l2VAePQGJ67NPeuxQbyX_P9XIVb2/view?usp=sharing" },
 ];
 
 // CHANGE: Widened container to max-w-5xl, updated text to white for lighter bg visibility
