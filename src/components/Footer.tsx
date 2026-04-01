@@ -16,13 +16,13 @@ const Footer = () => (
           <img
             src="/cmrit_logo.png"
             alt="Sponsor Logo"
-            className="h-10 w-auto object-contain"
+            className="h-16 w-auto object-contain"   // increased
           />
 
           <img
             src="/code_rush_white.png"
             alt="Hackathon Logo"
-            className="h-10 w-auto object-contain"
+            className="h-16 w-auto object-contain"   // increased
           />
 
         </div>
