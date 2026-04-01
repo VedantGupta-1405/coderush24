@@ -31,7 +31,7 @@ const HeroSection = () => (
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
           {[
-            { icon: Calendar, label: "Date", value: "28–29 April 2026", href: null },
+            { icon: Calendar, label: "Date", value: "29-30 April 2026", href: null },
             { icon: Users, label: "Team Size", value: "2–4 Members", href: null },
             { icon: Coins, label: "Entry Fee", value: "₹600 / Team", href: null },
             // CHANGE: Added href to location card so clicking opens Google Maps directions
