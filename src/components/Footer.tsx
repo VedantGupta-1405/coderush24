@@ -7,20 +7,20 @@ const Footer = () => (
           <p className="font-display font-bold text-foreground">
             CMR Institute of Technology
           </p>
-          <p className="text-sm text-muted-foreground">Bangalore</p>
+          <p className="text-sm text-black">Bangalore</p>
         </div>
 
         {/* Logos */}
         <div className="flex items-center gap-6">
           
           <img
-            src="/cmrit_logo.png"   // <-- replace with your path
+            src="/cmrit_logo.png"
             alt="Sponsor Logo"
             className="h-10 w-auto object-contain"
           />
 
           <img
-            src="/code_rush_white.png" // <-- replace with your path
+            src="/code_rush_white.png"
             alt="Hackathon Logo"
             className="h-10 w-auto object-contain"
           />
@@ -28,7 +28,7 @@ const Footer = () => (
         </div>
       </div>
 
-      <p className="text-center text-xs text-muted-foreground mt-8">
+      <p className="text-center text-xs text-black mt-8">
         Built for Code Rush Hackathon 2026
       </p>
     </div>
