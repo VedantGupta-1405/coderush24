@@ -2,12 +2,12 @@ import { Phone } from "lucide-react";
 
 const contacts = {
   "Technical Coordinators": [
-    { name: "Mr. Adarsh Tiwari", phone: "+91 1234567890" },
-    { name: "Ms. Mouna Muthamma", phone: "+91 1234567890" },
+    { name: "Mr. Adarsh Tiwari", phone: "+91 8874270707" },
+    { name: "Ms. Mouna Muthamma", phone: "+91 9483354144" },
   ],
   "Student Coordinators": [
-    { name: "Rudraksh", phone: "+91 1234567890" },
-    { name: "Zaira", phone: "+91 1234567890" },
+    { name: "Rudraksh", phone: "+91 7975882681" },
+    { name: "Zaira", phone: "+91 7780994557" },
   ],
 };
 
