@@ -19,7 +19,7 @@ const PrizesSection = () => (
           ₹25,000+
         </p>
 
-        <p className="text-sm text-white/70 mt-2">
+        <p className="text-base text-white/70 mt-2">
           Goodies and many more prizes
         </p>
       </div>
