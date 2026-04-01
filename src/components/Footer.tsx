@@ -2,18 +2,29 @@ const Footer = () => (
   <footer className="border-t border-border py-10">
     <div className="section-container">
       <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+        
         <div className="text-center md:text-left">
-          <p className="font-display font-bold text-foreground">CMR Institute of Technology</p>
+          <p className="font-display font-bold text-foreground">
+            CMR Institute of Technology
+          </p>
           <p className="text-sm text-muted-foreground">Bangalore</p>
         </div>
 
+        {/* Logos */}
         <div className="flex items-center gap-6">
-          <div className="w-20 h-10 border border-border rounded flex items-center justify-center text-xs text-muted-foreground">
-            Sponsor Logo
-          </div>
-          <div className="w-20 h-10 border border-border rounded flex items-center justify-center text-xs text-muted-foreground">
-            Hackathon Logo
-          </div>
+          
+          <img
+            src="/cmrit_logo.png"   // <-- replace with your path
+            alt="Sponsor Logo"
+            className="h-10 w-auto object-contain"
+          />
+
+          <img
+            src="/code_rush_white.png" // <-- replace with your path
+            alt="Hackathon Logo"
+            className="h-10 w-auto object-contain"
+          />
+
         </div>
       </div>
 
